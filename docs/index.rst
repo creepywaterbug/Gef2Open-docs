@@ -24,3 +24,12 @@ sub4
 ----
 
 blaat sub4
+
+Inhoudsopgave
+=============
+
+.. toctree::
+   :maxdepth: 2
+
+   blaat1
+   blaat2
