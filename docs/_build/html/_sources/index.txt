@@ -40,4 +40,4 @@ Inhoudsopgave
 .. toctree::
    :maxdepth: 2
 
-   anders 
+   functies 
