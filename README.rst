@@ -5,7 +5,6 @@ UtlGefOpen Documentatie
 Deze repository bevat de broncode van de UtlGefOpen documentatie.
 
 De repository van UtlGefOpen zelf vind u hier:
-
 `https://www.github.com/creepywaterbug/UtlGefOpen`
 
 ========
