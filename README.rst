@@ -2,7 +2,8 @@ UtlGefOpen
 ========
 UtlGefOpen is een python tool als alternatief voor de gesloten windows library Gef2.dll. Met UtlGefOpen kunnen zogenaamde GEF (geotechnical exchange format) bestanden worden getest en uitgelezen. UtlGefOpen heeft zo'n 50 functies die elk als input de locatie van een GEF-bestand hebben en sommige hebben daarnaast extra input parameters.
 
-De functies kunnen als volgt worden aangeroepen::
+De functies kunnen als volgt worden aangeroepen:
+
 	import UtlGefOpen
 	myGef='/pad/naar/je/gef-bestand.gef'
 	UtlGefOPen.myFunction(myGef)
