@@ -15,6 +15,7 @@
 import sys
 import os
 import shlex
+import sphinx_rtd_theme
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -108,7 +109,8 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'alabaster'
+#html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -121,9 +123,11 @@ html_theme = 'alabaster'
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 #html_title = None
+html_title = 'UtlGefOpen documentatie'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
+html_short_title = 'UtlGefOpen documentatie'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
