@@ -10,5 +10,5 @@ Bijdragen
 
 Bugs, tekortkomingen, suggesties e.a. kunt u melden in de [issue tracker](https://www.github.com/creepywaterbug/UtlGefOpen-docs/issues).
 
-.. _a link: http://example.com/
+`Link text <http://example.com/>`_
 
