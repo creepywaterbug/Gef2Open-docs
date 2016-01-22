@@ -4,7 +4,9 @@ UtlGefOpen is een python tool als alternatief voor de gesloten windows library G
 
 De functies kunnen als volgt worden aangeroepen:
 	import UtlGefOpen
+
 	myGef='/pad/naar/je/gef-bestand.gef'
+
 	UtlGefOPen.myFunction(myGef)
 
 Features
