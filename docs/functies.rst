@@ -8,7 +8,6 @@ Functie					Gelijk ?        Aktie ?
 ======================================	==============  ========
 def Gbr_Is_Gbr()			Ja		Ja	
 def Gcr_Is_Gcr()			1van2000 niet   Ja
-def Brh_Is_Brh()			??
 def Get_CompanyID_Flag()		Ja
 def Get_Column()			Ja
 def Get_Column_Flag()			Ja
