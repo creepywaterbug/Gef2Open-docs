@@ -14,7 +14,9 @@ Op grond hiervan neem ik aan dat de volgende waardes missing values zijn en geli
 
 De aanroep van Gef2.dll functies in UtlGef.py leveren veelvuldig geen resultaat op. In alle gevallen was dit ook bij de bijbehorende functie in UtlGefOpen.py het geval.
 
+In UtlGefOpen.py zijn alle resultaten met één van de genoemde missing values omgezet naar 'None'
+
 ***********
 Afrondingen
 ***********
-Getalmatige uitkomsten in UtlGef.py werden veelal afgerond op 3 decimalen achter de comma. Bij het vergelijken van de uitkomsten tussen Gef2.dll/UtlGef.py en UtlGefOpen.py is hiermee rekening gehouden.
+Getalsmatige uitkomsten in UtlGef.py werden veelal afgerond op 3 decimalen achter de comma. Bij het vergelijken van de uitkomsten tussen Gef2.dll/UtlGef.py en UtlGefOpen.py is hiermee rekening gehouden. Maar de afrondingen zijn in UtlGefOpen.py zelf niet doorgevoerd.
