@@ -31,8 +31,8 @@
 
   
     <link rel="top" title="UtlGefOpen documentatie" href="index.html"/>
-        <link rel="next" title="Referenties" href="referenties.html"/>
-        <link rel="prev" title="UtlGefOpen documentatie" href="index.html"/> 
+        <link rel="next" title="Betrouwbaarheid" href="betrouwbaarheid.html"/>
+        <link rel="prev" title="Gebruik Gef2Open.py" href="gebruik.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -82,20 +82,23 @@
             
             
                 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gebruik.html">Gebruik Gef2Open.py</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Functies</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#lange-lijst">Lange lijst</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#is-plotable">Is_Plotable()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#get-nr-scans">Get_Nr_Scans()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#get-procedurecode-flag">Get_Procedurecode_Flag()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#gbr-is-gbr">Gbr_Is_Gbr()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#gcr-is-gcr">Gcr_Is_Gcr()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">Get_ProcedureCode_Flag()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#get-procedurecode-code">Get_ProcedureCode_Code()</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#get-projectid-flag">Get_ProjectID_Flag()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gbr-is-gbr">gbr_is_gbr()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gcr-is-gcr">gcr_is_gcr()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-nr-scans">get_nr_scans()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-procedurecode-flag">get_procedurecode_flag()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-procedurecode-code">get_procedurecode_code()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-projectid-flag">get_projectid_flag()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#qn2column-i-iqtynumber">qn2column(i_iQtyNumber)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#i-iqtynumber-1">i_iQtyNumber=1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-iqtynumber-11">i_iQtyNumber=11</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#is-plotable">is_plotable()</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="betrouwbaarheid.html">Betrouwbaarheid</a></li>
 <li class="toctree-l1"><a class="reference internal" href="referenties.html">Referenties</a></li>
 </ul>
 
@@ -143,206 +146,36 @@
             
   <div class="section" id="functies">
 <h1>Functies<a class="headerlink" href="#functies" title="Permalink to this headline">¶</a></h1>
-<p><strong>Vergeleken functies</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="62%" />
-<col width="23%" />
-<col width="15%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Functie</th>
-<th class="head">Gelijk ?</th>
-<th class="head">Aktie ?</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>def Gbr_Is_Gbr()</td>
-<td>Ja</td>
-<td>Ja</td>
-</tr>
-<tr class="row-odd"><td>def Gcr_Is_Gcr()</td>
-<td>1van2000 niet</td>
-<td>Ja</td>
-</tr>
-<tr class="row-even"><td>def Brh_Is_Brh()</td>
-<td>??</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_CompanyID_Flag()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Get_Column()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_Column_Flag()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Get_CompanyID_Name()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_Data(i_Kol, iRij)</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Get_MeasurementText_Flag(i_Index)</td>
-<td>??</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_MeasurementVar_Flag(i_Index)</td>
-<td>??</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Get_MeasurementText_Tekst(i_Index)</td>
-<td>??</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_MeasurementVar_Value(i_Index)</td>
-<td>??</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Get_Nr_Scans()</td>
-<td>10v2000 niet</td>
-<td>Ja,hoe?</td>
-</tr>
-<tr class="row-odd"><td>def Get_Parent_Flag()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Get_Parent_Reference()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_ProcedureCode_Flag()</td>
-<td>1v2000 niet</td>
-<td>Nee,Klaar</td>
-</tr>
-<tr class="row-even"><td>def Get_ProcedureCode_Code()</td>
-<td>helft niet</td>
-<td>Ja</td>
-</tr>
-<tr class="row-odd"><td>def Get_ProjectID_Flag()</td>
-<td>500v2000 niet</td>
-<td>Ja</td>
-</tr>
-<tr class="row-even"><td>def Get_ProjectID_Number()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_ReportCode_Flag()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Get_ReportCode_Code()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_StartDate_Flag()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Get_StartDate_Yyyy()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_StartDate_Mm()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Get_StartDate_Dd()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_XYID_Flag()</td>
-<td>10v2000 niet</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Get_XYID_X()</td>
-<td>10v2000 niet</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_XYID_Y()</td>
-<td>10v2000 niet</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Get_ZID_Flag()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>def Get_ZID_Z()</td>
-<td>Ja</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>def Qn2Column(i_iQtyNumber)</td>
-<td>100v2000 niet</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Uitkomsten van 5 niet vergeleken test functies</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="68%" />
-<col width="13%" />
-<col width="9%" />
-<col width="11%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Functie</th>
-<th class="head">Totaal</th>
-<th class="head">True</th>
-<th class="head">False</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>def Test_Gef(&#8216;GEF-CPT-Report)</td>
-<td>2001</td>
-<td>1017</td>
-<td>984</td>
-</tr>
-<tr class="row-odd"><td>def Test_Gef(&#8216;HEADER&#8217;)</td>
-<td>2001</td>
-<td>1937</td>
-<td>64</td>
-</tr>
-<tr class="row-even"><td>def Test_Gef(&#8216;GEF-BORE-Report&#8217;)</td>
-<td>2001</td>
-<td>570</td>
-<td>1431</td>
-</tr>
-<tr class="row-odd"><td>def Test_Gef(&#8216;DATA&#8217;)</td>
-<td>2001</td>
-<td>1998</td>
-<td>3</td>
-</tr>
-<tr class="row-even"><td>def Is_Plotable()</td>
-<td>2001</td>
-<td>2001</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-<div class="section" id="lange-lijst">
-<h2>Lange lijst<a class="headerlink" href="#lange-lijst" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="is-plotable">
-<h3>Is_Plotable()<a class="headerlink" href="#is-plotable" title="Permalink to this headline">¶</a></h3>
+<p>Voor de meeste functies was eenvoudig te achterhalen welke informatie uit de gef-bestanden moest worden opgehaald. Als uit de uitgevoerde test in &#8216;betrouwbaarheid&#8217; vervolgens een 100% match bleek is naar de betreffende functie verder (nog) niet inhoudelijk gekeken.</p>
+<p>Functies waar wel meer in detail naar is gekeken zijn hieronder opgenomen.</p>
+<div class="section" id="gbr-is-gbr">
+<h2>gbr_is_gbr()<a class="headerlink" href="#gbr-is-gbr" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://localhost/rdddiv/gef2prog_3.pdf">Programmers documentation</a>:</p>
-<div class="highlight-python"><div class="highlight"><pre>int is_plotable(void):
-
-This function determines whetter the most basic information is
-present in the file in order to produce a graph of the data.
+<div class="highlight-python"><div class="highlight"><pre>int  gbr_is_gbr();
 Output:
-A boolean which signals whether a plot can be made.
+True if the file contains a reportcode: GEF-BORE-Report
 </pre></div>
 </div>
-<p>Bij een test waarbij de test Is_Plotable() van Gef2.dll is uitgevoerd hadden alle 2000 geteste gef-bestanden als uitslag &#8216;True&#8217;. Hier zaten ook 3 gef-bestanden bij waarbij de test Test_Gef(&#8216;DATA&#8217;) de uitslag &#8216;False&#8217; had.</p>
+<p>Bovenstaande klopt met de inhoud van Gef2Open.py. Bij een test waarbij de test Gbr_Is_Gbr() van Gef2.dll is uitgevoerd hadden alle gef-bestanden dezelfde uitkomst voor Gef2.dll en Gef2Open.py. <strong>ToDo</strong>: &#8216;PROCEDURECODE&#8217; uit functie halen</p>
+</div>
+<div class="section" id="gcr-is-gcr">
+<h2>gcr_is_gcr()<a class="headerlink" href="#gcr-is-gcr" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://localhost/rdddiv/gef2prog_3.pdf">Programmers documentation</a>:</p>
+<div class="highlight-python"><div class="highlight"><pre>int gcr_is_legal();
+This functions returns a true if the file is a legal (approved by the CUR) CPT Report file.
+int gcr_is_gcr();
+This functions is an alias for gcr_is_legal(); since there is a gbr_is_gbr(); as well
+</pre></div>
+</div>
+<p>Bovenstaande is een andere meer omvattende beschrijving dan Gbr_Is_Gbr(). De functie in Gef2Open.py is analoog aan de beschrijving in Gbr_Is_Gbr() gebouwd. Dus uitkomst &#8216;True&#8217; als de file een reportcode met waarde &#8216;GEF-CPT-Report&#8217; bevat. In de uitgevoerde test had 1 van de 2000 gef-bestanden een andere uitkomst voor Gef2Open.py (True) in vergelijking met Gef2.dll (False). Het betreffende bestand had de volgende relevante regels:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c">#PROCEDURECODE= GEF-CPT-Report, 1, 1, 0, -</span>
+<span class="c">#REPORTCODE= GEF-DISS-Report, 1, 0, 0, -</span>
+</pre></div>
+</div>
+<p>In Gef2Open.py geeft een &#8216;True&#8217; als &#8216;GEF-CPT-Report&#8217; in ofwel &#8216;PROCEDURECODE&#8217; ofwel &#8216;REPORTCODE&#8217; voorkomt. Dit is een andere benadering dan hierboven beschreven en kennelijk kijkt Gef2.dll alleen in &#8216;REPORTCODE&#8217; en niet in &#8216;PROCEDURECODE&#8217;. <strong>ToDo</strong>: &#8216;PROCEDURECODE&#8217; uit functie halen</p>
 </div>
 <div class="section" id="get-nr-scans">
-<h3>Get_Nr_Scans()<a class="headerlink" href="#get-nr-scans" title="Permalink to this headline">¶</a></h3>
+<h2>get_nr_scans()<a class="headerlink" href="#get-nr-scans" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://localhost/rdddiv/gef2prog_3.pdf">Programmers documentation</a>:</p>
 <div class="highlight-python"><div class="highlight"><pre>long get_nr_scans():
 
@@ -354,12 +187,12 @@ Output:
 The actual number of scans, as present in the data block.
 </pre></div>
 </div>
-<p>Bij een test waarbij de test Get_Nr_Scans() van Gef2.dll is uitgevoerd hadden 10 van 2000 gef-bestanden een andere uitkomst (1990 waren dus gelijk). In UtlGefOpen is echter simpelweg de waarde achter &#8216;LASTSCAN&#8217; in de header overgenomen. Uit de beschrijving hierboven blijkt dat dit niet de bedoeling is. <strong>ToDo</strong>: uitzoeken hoe Get_Nr_Scans() werkt!</p>
+<p>Bij een test waarbij de test Get_Nr_Scans() van Gef2.dll is uitgevoerd hadden 10 van 2000 gef-bestanden een andere uitkomst (1990 waren dus gelijk). In Gef2Open is echter simpelweg de waarde achter &#8216;LASTSCAN&#8217; in de header overgenomen. Uit de beschrijving hierboven blijkt dat dit niet de bedoeling is. <strong>ToDo</strong>: uitzoeken hoe Get_Nr_Scans() werkt!</p>
 </div>
 <div class="section" id="get-procedurecode-flag">
-<h3>Get_Procedurecode_Flag()<a class="headerlink" href="#get-procedurecode-flag" title="Permalink to this headline">¶</a></h3>
+<h2>get_procedurecode_flag()<a class="headerlink" href="#get-procedurecode-flag" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://localhost/rdddiv/gef2prog_3.pdf">Programmers documentation</a>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Procedurecode= Code, Release, Version, Update[, Reference]
+<div class="highlight-python"><div class="highlight"><pre>#Procedurecode= Code, Release, Version, Update[, Reference]
 
 Setting:
 void set_procedurecode( char *Code, int Release, int Version, int Update, char *Reference );
@@ -375,10 +208,11 @@ int get_procedurecode_Version()      int   get_procedurecode_versie();
 int get_procedurecode_Update()       int   get_procedurecode_update();
 char* get_procedurecode_Reference()  char* get_procedurecode_isoref();
 ==================================   =================================
+
 Deleting:
 int del_procedurecode ();
 
-Code            Reference Text stating the code of the procedure.
+Code            Text stating the code of the procedure.
 Release         A number which gives the release of the procedure.
 Version         A number which gives the version of the procedure.
 Update          A number which gives the update of the procedure.
@@ -387,79 +221,46 @@ Reference       Reference document or ISO-9000 standard. Maximum 80 characters.
 Example: #Procedurecode=GEF-CPT-Report, 1,0,0.
 </pre></div>
 </div>
-</div>
-<div class="section" id="gbr-is-gbr">
-<h3>Gbr_Is_Gbr()<a class="headerlink" href="#gbr-is-gbr" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://localhost/rdddiv/gef2prog_3.pdf">Programmers documentation</a>:</p>
-<div class="highlight-python"><div class="highlight"><pre>int  gbr_is_gbr();
-Output:
-True if the file contains a reportcode: GEF-BORE-Report
+<p><strong>Gef2Open.py</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">Get_ProcedureCode_Flag</span><span class="p">():</span>
+        <span class="n">fp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;tmpheaderdict.pkl&quot;</span><span class="p">)</span>
+        <span class="n">headerdict</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">literal_eval</span><span class="p">(</span><span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">fp</span><span class="p">))</span>
+        <span class="k">if</span> <span class="p">(</span><span class="s">&#39;PROCEDURECODE&#39;</span> <span class="ow">in</span> <span class="n">headerdict</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">headerdict</span><span class="p">[</span><span class="s">&#39;PROCEDURECODE&#39;</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">):</span>
+                <span class="n">out</span><span class="o">=</span><span class="bp">True</span>
+        <span class="k">else</span><span class="p">:</span>
+                <span class="n">out</span><span class="o">=</span><span class="bp">False</span>
+        <span class="k">try</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">out</span>
+        <span class="k">except</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">None</span>
 </pre></div>
 </div>
-<p>Bovenstaande klopt met de inhoud van UtlGefOpen.py. Bij een test waarbij de test Gbr_Is_Gbr() van Gef2.dll is uitgevoerd hadden alle gef-bestanden dezelfde uitkomst voor Gef2.dll en UtlGefOpen.py. <strong>ToDo</strong>: &#8216;PROCEDURECODE&#8217; uit functie halen</p>
-</div>
-<div class="section" id="gcr-is-gcr">
-<h3>Gcr_Is_Gcr()<a class="headerlink" href="#gcr-is-gcr" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://localhost/rdddiv/gef2prog_3.pdf">Programmers documentation</a>:</p>
-<div class="highlight-python"><div class="highlight"><pre>int gcr_is_legal();
-This functions returns a true if the file is a legal (approved by the CUR) CPT Report file.
-int gcr_is_gcr();
-This functions is an alias for gcr_is_legal(); since there is a gbr_is_gbr(); as well
-</pre></div>
-</div>
-<p>Bovenstaande is een andere meer omvattende beschrijving dan Gbr_Is_Gbr(). De functie in UtlGefOpen.py is analoog aan de beschrijving in Gbr_Is_Gbr() gebouwd. Dus uitkomst &#8216;True&#8217; als de file een reportcode met waarde &#8216;GEF-CPT-Report&#8217; bevat. In de uitgevoerde test had 1 van de 2000 gef-bestanden een andere uitkomst voor UtlGefOpen.py (True) in vergelijking met Gef2.dll (False). Het betreffende bestand had de volgende relevante regels:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="c">#PROCEDURECODE= GEF-CPT-Report, 1, 1, 0, -</span>
-<span class="c">#REPORTCODE= GEF-DISS-Report, 1, 0, 0, -</span>
-</pre></div>
-</div>
-<p>In UtlGefOpen.py geeft een &#8216;True&#8217; als &#8216;GEF-CPT-Report&#8217; in ofwel &#8216;PROCEDURECODE&#8217; ofwel &#8216;REPORTCODE&#8217; voorkomt. Dit is een andere benadering dan hierboven beschreven en kennelijk kijkt Gef2.dll alleen in &#8216;REPORTCODE&#8217; en niet in &#8216;PROCEDURECODE&#8217;. <strong>ToDo</strong>: &#8216;PROCEDURECODE&#8217; uit functie halen</p>
-</div>
-<div class="section" id="id5">
-<h3>Get_ProcedureCode_Flag()<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://localhost/rdddiv/gef2prog_3.pdf">Programmers documentation</a>:</p>
-<div class="highlight-python"><div class="highlight"><pre>=================================   ================================
-Preferred names                     Alias
-=================================   ================================
-char* get_procedurecode_Code()      char* get_procedurecode_code();
-int get_procedurecode_Release()     int get_procedurecode_release();
-int get_procedurecode_Version()     int get_procedurecode_versie();
-int get_procedurecode_Update()      int get_procedurecode_update();
-int get_procedurecode_Reference()   int get_procedurecode_isoref();
-=================================   ================================
-
-#Procedurecode= Code, Release, Version, Update[, Reference]
-Setting:
-void    set_procedurecode(char *Code, int Release, int Version, int Update, char *Reference);
-Getting:
-int     get_procedurecode_flag();
-
-
-Deleting:
-int     del_procedurecode()
-
-Code            Text stating the code of the procedure
-Release         A number which gives the release of the procedure
-Version         A number which gives the version of the procedure
-Update          A number whic gives the update of the procedure
-Reference       Reference document of ISO-9000 standard. Maximum 80 characters
-Example:        #Procedurecode=GEF-CPT-Report, 1,0,0.
-</pre></div>
-</div>
-<p>Bij een vergelijking tussen de uitkomsten van de functie in Gef2.dll en UtlGefOpen gaf 1 van 2000 gef-bestanden een verschillende uitkomst. Gef2.dll: False / UtlGefOpen: True. De relevante regel in het gef-bestand is:</p>
+<p>Bij een vergelijking tussen de uitkomsten van de functie in Gef2.dll en Gef2Open.py gaf 1 van 2000 gef-bestanden een verschillende uitkomst. Gef2.dll: False / Gef2Open.py: True. De relevante regel in het gef-bestand is:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c">#PROCEDURECODE= GEF-CPT-Report, 1, 1, 0, -</span>
 </pre></div>
 </div>
-<p>Het is onduidelijk / onlogisch waarom Gef2.dll hier een False afgeeft. Ik ga er daarom vanuit dat UtlGefOpen.py goed is.</p>
+<p>Het is onduidelijk / onlogisch waarom Gef2.dll hier een False afgeeft. Ik ga er daarom vanuit dat Gef2Open.py goed is.</p>
 </div>
 <div class="section" id="get-procedurecode-code">
-<h3>Get_ProcedureCode_Code()<a class="headerlink" href="#get-procedurecode-code" title="Permalink to this headline">¶</a></h3>
+<h2>get_procedurecode_code()<a class="headerlink" href="#get-procedurecode-code" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://localhost/rdddiv/gef2prog_3.pdf">Programmers documentation</a>:
 zie onder <strong>Get_ProcedureCode_Code()</strong></p>
-<p>Bij een vergelijking tussen de uitkomsten van de functie in Gef2.dll en UtlGefOpen had circa de helft van de gef-bestanden een andere uitkomst. Op 1 gef-bestand na was de uitkomst van gef2.dll een geforceerde &#8216;None&#8217; uitkomst als gevolg van een non-response van Gef2.dll. UtlGefOpen.py gaf in die gevalllen een False omdat het keyword &#8216;PROCEDURECODE&#8217; afwezig was of geen bijbehorende waarde had.</p>
-<p><strong>ToDo</strong>: Hoewel de Programmers docs geen uitsluitsel geeft vind ik de uitkomst None een betere dan False. Dus ga deze vervangen.</p>
+<p><strong>Gef2Open.py</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">Get_ProcedureCode_Code</span><span class="p">():</span>
+        <span class="n">fp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;tmpheaderdict.pkl&quot;</span><span class="p">)</span>
+        <span class="n">headerdict</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">literal_eval</span><span class="p">(</span><span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">fp</span><span class="p">))</span>
+        <span class="k">if</span> <span class="p">(</span><span class="s">&#39;PROCEDURECODE&#39;</span> <span class="ow">in</span> <span class="n">headerdict</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">headerdict</span><span class="p">[</span><span class="s">&#39;PROCEDURECODE&#39;</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">):</span>
+                <span class="n">out</span><span class="o">=</span><span class="n">headerdict</span><span class="p">[</span><span class="s">&#39;PROCEDURECODE&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">try</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">out</span>
+        <span class="k">except</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">None</span>
+</pre></div>
+</div>
+<p>Bij een vergelijking tussen de uitkomsten van de functie in Gef2.dll en Gef2Open.py had slechts 1 van 2000 gef-betanden een andere uitkomsten. De reden hiervoor is dezelfde als bij Get_ProcedureCode_Flag().</p>
 </div>
 <div class="section" id="get-projectid-flag">
-<h3>Get_ProjectID_Flag()<a class="headerlink" href="#get-projectid-flag" title="Permalink to this headline">¶</a></h3>
+<h2>get_projectid_flag()<a class="headerlink" href="#get-projectid-flag" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://localhost/rdddiv/gef2prog_3.pdf">Programmers documentation</a>:</p>
 <div class="highlight-python"><div class="highlight"><pre>#Projectid=Type, [Number, [Sub]]
 
@@ -486,27 +287,103 @@ Sub     The sub-project number
 Example:        #Projectid=CO, 342770, 624
 </pre></div>
 </div>
-<p><strong>UtlGefOpen.py</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">Get_ProjectID_Flag</span><span class="p">():</span>
+<p><strong>Gef2Open.py</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">get_projectid_flag</span><span class="p">():</span>
         <span class="n">fp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;tmpheaderdict.pkl&quot;</span><span class="p">)</span>
         <span class="n">headerdict</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">literal_eval</span><span class="p">(</span><span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">fp</span><span class="p">))</span>
-        <span class="k">if</span> <span class="p">(</span><span class="s">&#39;PROJECTID&#39;</span> <span class="ow">in</span> <span class="n">headerdict</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">headerdict</span><span class="p">[</span><span class="s">&#39;PROJECTID&#39;</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">):</span>
-                <span class="n">out</span> <span class="o">=</span> <span class="bp">True</span>
-        <span class="k">else</span><span class="p">:</span>
-                <span class="n">out</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="k">if</span> <span class="s">&#39;PROJECTID&#39;</span> <span class="ow">in</span> <span class="n">headerdict</span><span class="p">:</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">headerdict</span><span class="p">[</span><span class="s">&#39;PROJECTID&#39;</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+                        <span class="n">out</span> <span class="o">=</span> <span class="bp">True</span>
+                <span class="k">else</span><span class="p">:</span>
+                        <span class="n">out</span> <span class="o">=</span> <span class="bp">False</span>
         <span class="k">try</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">out</span>
         <span class="k">except</span><span class="p">:</span>
                 <span class="k">return</span> <span class="bp">None</span>
 </pre></div>
 </div>
-<p>In de test waarbij de uitkomsten van de functie in Gef2.dll en UtlGefOpen.py met elkaar zijn vergeleken bleken alle 2000 bestanden voor Gef2.dll de uitkomst &#8216;True&#8217; te hebben, terwijl circa 1500 daarvan in UtlGefOpen.py dezelfde uitkomst hadden (True) maar 500 een andere uitkomst hadden (False). Ik heb 1 gef-bestand (DKMP29-152KR_000_DIS_02) bekeken en zag daar de volgende relevante regel:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="c">#PROJECTID= 1204-0058-011</span>
+<p>In de test waarbij de uitkomsten voor de functie in Gef2.dll met die van Gef2Open.py met elkaar zijn vergeleken leverde voor alle 2000 vergeleken bestanden dezelfde uitkomst.</p>
+</div>
+<div class="section" id="qn2column-i-iqtynumber">
+<h2>qn2column(i_iQtyNumber)<a class="headerlink" href="#qn2column-i-iqtynumber" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://localhost/rdddiv/gef2prog_3.pdf">Programmers documentation</a>:</p>
+<div class="highlight-python"><div class="highlight"><pre>This function queries the header structure for the presence of a column in the data block, which
+contains specific information, as determined by a quantity number. The main advantage of
+quantity number is that it is a number, independent of language, spelling (errors) or description.
+A particular quantity can thus be easily located.
+int     qn2column(int quantitynumber);
+Input:
+int     quantitynumber      The number that characterizes the requested quantity.
+Output:
+The number of the column in which the requested quantity can be found. If the quantity is not
+present, the function returns 0.
 </pre></div>
 </div>
-<p>Dit hoort een &#8216;True&#8217; op te leveren. Dit gaat fout vanwege &#8216;len(headerdic...&gt;1&#8217;, moet zijn &#8216;len(headerdic ....&gt;0&#8217;</p>
-<p><strong>ToDo</strong>: Aanpassen!</p>
+<p><strong>Gef2Open.py</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">Qn2Column</span><span class="p">(</span><span class="n">i_iQtyNumber</span><span class="p">):</span>
+        <span class="n">headerdict</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">literal_eval</span><span class="p">(</span><span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s">&quot;tmpheaderdict.pkl&quot;</span><span class="p">)))</span>
+        <span class="k">try</span><span class="p">:</span>
+                <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+                <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">None</span>
+</pre></div>
 </div>
+<p>De beschrijving in de Programmers documentation geeft geen info over HOE &#8216;the requested quantity&#8217; wordt &#8216;characterized&#8217;. De werking van deze functie kon dus alleen worden achterhaald door het analyseren van de uitkomsten van tests op 2000 gef-bestanden. Voorlopig is dit alleen gebeurt voor de waarden &#8216;1&#8217; en &#8216;11&#8217; van i_iQtyNumber.</p>
+<div class="section" id="i-iqtynumber-1">
+<h3>i_iQtyNumber=1<a class="headerlink" href="#i-iqtynumber-1" title="Permalink to this headline">¶</a></h3>
+<p>Ik moest testen of 1 van de termen &#8216;sondeerlengte&#8217;,&#8217;penetration length&#8217;,&#8217;diepte bovenkant&#8217; of &#8216;laag van&#8217; achter keyworde COLUMNINFO aanwezig was en vervolgens het nummer vooraan teruggeven. Voorbeeld:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c">#COLUMNINFO= 1, m, Sondeerlengte, 1</span>
+</pre></div>
+</div>
+<p>Op deze manier kreeg ik in de test voor 1960 van 2000 bestanden dezelfde uitkomst voor Gef2.dll en Gef2Open.py. Wat de logica hierachter is is mij onbekend.</p>
+<p><strong>Gef2Open.py</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">i_iQtyNumber</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">headerdict</span><span class="p">[</span><span class="s">&#39;COLUMNINFO&#39;</span><span class="p">]:</span>
+                <span class="n">j</span> <span class="o">=</span> <span class="n">headerdict</span><span class="p">[</span><span class="s">&#39;COLUMNINFO&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+                <span class="k">if</span> <span class="s">&#39;sondeerlengte&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)):</span>
+                        <span class="n">out</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">if</span> <span class="s">&#39;penetration length&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)):</span>
+                        <span class="n">out</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">if</span> <span class="s">&#39;diepte bovenkant&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)):</span>
+                        <span class="n">out</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">if</span> <span class="s">&#39;laag van&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)):</span>
+                        <span class="n">out</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="i-iqtynumber-11">
+<h3>i_iQtyNumber=11<a class="headerlink" href="#i-iqtynumber-11" title="Permalink to this headline">¶</a></h3>
+<p>Ik moest testen of de term &#8216;gecorrigeerde diepte&#8217; achter het keyword &#8216;COLUMNINFO&#8217; aanwezig was en
+vervolgens het nummer vooraan teruggeven. Dit leverde in de uiteindelijke test altijd een match op in de vergelijking tussen de uitkomsten van Gef2.dll en Gef2Open.py.</p>
+<p><strong>Gef2Open.py</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">i_iQtyNumber</span><span class="o">==</span><span class="mi">11</span><span class="p">:</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">headerdict</span><span class="p">[</span><span class="s">&#39;COLUMNINFO&#39;</span><span class="p">]:</span>
+                <span class="n">j</span> <span class="o">=</span> <span class="n">headerdict</span><span class="p">[</span><span class="s">&#39;COLUMNINFO&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+                <span class="k">if</span> <span class="s">&#39;gecorrigeerde diepte&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">))</span> <span class="p">:</span>
+                        <span class="n">out</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="is-plotable">
+<h2>is_plotable()<a class="headerlink" href="#is-plotable" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://localhost/rdddiv/gef2prog_3.pdf">Programmers documentation</a>:</p>
+<div class="highlight-python"><div class="highlight"><pre>int is_plotable(void):
+
+This function determines whetter the most basic information is
+present in the file in order to produce a graph of the data.
+Output:
+A boolean which signals whether a plot can be made.
+</pre></div>
+</div>
+<p>Bij een test waarbij de test Is_Plotable() van Gef2.dll is uitgevoerd hadden alle 2000 geteste gef-bestanden als uitslag &#8216;True&#8217;. Hier zaten ook 3 gef-bestanden bij waarbij de test Test_Gef(&#8216;DATA&#8217;) de uitslag &#8216;False&#8217; had.</p>
 </div>
 </div>
 
@@ -517,10 +394,10 @@ Example:        #Projectid=CO, 342770, 624
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="referenties.html" class="btn btn-neutral float-right" title="Referenties" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="betrouwbaarheid.html" class="btn btn-neutral float-right" title="Betrouwbaarheid" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="UtlGefOpen documentatie" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="gebruik.html" class="btn btn-neutral" title="Gebruik Gef2Open.py" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

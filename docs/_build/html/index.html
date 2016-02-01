@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>UtlGefOpen documentatie &mdash; UtlGefOpen documentatie</title>
+  <title>Gef2Open documentatie &mdash; UtlGefOpen documentatie</title>
   
 
   
@@ -31,7 +31,7 @@
 
   
     <link rel="top" title="UtlGefOpen documentatie" href="#"/>
-        <link rel="next" title="Functies" href="functies.html"/> 
+        <link rel="next" title="Gebruik Gef2Open.py" href="gebruik.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -81,7 +81,9 @@
             
             
                 <ul>
+<li class="toctree-l1"><a class="reference internal" href="gebruik.html">Gebruik Gef2Open.py</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functies.html">Functies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="betrouwbaarheid.html">Betrouwbaarheid</a></li>
 <li class="toctree-l1"><a class="reference internal" href="referenties.html">Referenties</a></li>
 </ul>
 
@@ -113,7 +115,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="#">Docs</a> &raquo;</li>
       
-    <li>UtlGefOpen documentatie</li>
+    <li>Gef2Open documentatie</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -127,15 +129,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="utlgefopen-documentatie">
-<h1>UtlGefOpen documentatie<a class="headerlink" href="#utlgefopen-documentatie" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="gef2open-documentatie">
+<h1>Gef2Open documentatie<a class="headerlink" href="#gef2open-documentatie" title="Permalink to this headline">¶</a></h1>
+<p>GEF (Geotechnical Exchange Format) is een bestandsformaat voor het opslaan en uitwisselen van geotechnische informatie. De standaard is uitvoerig beschreven in een aantal officiele documenten (zie onder &#8216;referenties&#8217;). Deltares heeft diverse software gemaakt waarmee gef-bestanden kunnen worden geanalyseerd en gemanipuleerd. De meeste software maakt daarbij gebruik van een tevens door Deltares beschikbaar gestelde windows library (Gef2.dll).</p>
+<p>Zover bekend is Deltares niet bereid de broncode van Gef2.dll aan het publiek beschikbaar te stellen. Dat is jammer, want daarmee kunnen alleen ontwikkelaars op windows platforms de library gebruiken. Omdat ik zelf van plan ben Open Source tools te gaan maken voor het presenteren en analyseren van informatie uit gef-bestanden heb ik daarom besloten Gef2.dll te open-sourcen.</p>
+<div class="section" id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Permalink to this headline">¶</a></h2>
+<p>Gef2Open.py is beschikbaar op <a class="reference external" href="https://github.com/creepywaterbug/Gef2Open">Github</a></p>
+<p>Issues kunnen via <a class="reference external" href="https://github.com/creepywaterbug/Gef2Open/issues">Github</a> worden ingediend.</p>
+<p>Veel plezier,</p>
 </div>
 <div class="section" id="inhoudsopgave">
-<h1>Inhoudsopgave<a class="headerlink" href="#inhoudsopgave" title="Permalink to this headline">¶</a></h1>
+<h2>Inhoudsopgave<a class="headerlink" href="#inhoudsopgave" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="gebruik.html">Gebruik Gef2Open.py</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functies.html">Functies</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="functies.html#lange-lijst">Lange lijst</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functies.html#gbr-is-gbr">gbr_is_gbr()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functies.html#gcr-is-gcr">gcr_is_gcr()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functies.html#get-nr-scans">get_nr_scans()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functies.html#get-procedurecode-flag">get_procedurecode_flag()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functies.html#get-procedurecode-code">get_procedurecode_code()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functies.html#get-projectid-flag">get_projectid_flag()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functies.html#qn2column-i-iqtynumber">qn2column(i_iQtyNumber)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functies.html#is-plotable">is_plotable()</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="betrouwbaarheid.html">Betrouwbaarheid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="betrouwbaarheid.html#ontbrekende-waarden">Ontbrekende waarden</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="referenties.html">Referenties</a><ul>
@@ -148,6 +169,7 @@
 </ul>
 </div>
 </div>
+</div>
 
 
            </div>
@@ -156,7 +178,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="functies.html" class="btn btn-neutral float-right" title="Functies" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="gebruik.html" class="btn btn-neutral float-right" title="Gebruik Gef2Open.py" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>

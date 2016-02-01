@@ -1,0 +1,71 @@
+########
+Algemeen
+########
+
+*********
+Downloads
+*********
+
+Gef2.py is beschikbaar op `Github <https://www.github.org/creepywaterbug/gef2open>`_
+
+Issues kunnen via `Github <https://www.github.org>`_ worden ingediend. 
+
+***************
+Gebruik Gef2.py
+***************
+De originele library wordt in windows systemen als volgt aangeroepen in python::
+
+	>>> Gef2 = ctypes.windll.Gef2
+
+De onderhavige library wordt op reguliere wijze geimporteerd in python::
+
+	>>> import Gef2
+
+In de originele gesloten library Gef2.dll moeten ter initialisatie de volgende functies worden aangeroepen::
+
+	>>> init_gef()
+	>>> free_gef()
+	>>> read_gef(i_sBestandGef)
+
+Het gef-bestand wordt dan in RAM geladen en is vervolgens voor andere functies beschikbaar
+
+In de onderhavige open library Gef2.py hoeft alleen de functie read_gef() te worden aangeroepen::
+
+	>>> read_gef(i_sBestandGef)
+
+De functie converteert de informatie uit het gef-bestand naar een eenvoudig bevraagbare dictionary. Om de werking van Gef2.py vergelijkbaar te maken aan Gef2.dll wordt de dictionary vervolgens in een tijdelijk bestand weggeschreven.
+
+Alle andere functies worden vervolgens op vergelijkbare wijze als bij Gef2.dll aangeroepen::
+
+	Gef2.gbr_is_gbr()
+	Gef2.gcr_is_gcr()
+	Gef2.get_companyid_flag()
+	Gef2.get_column()
+	Gef2.get_column_flag()
+	Gef2.get_companyid_Name()
+	Gef2.get_data(i_Kol, iRij)
+	Gef2.get_measurementtext_flag(i_Index)
+	Gef2.get_measurementvar_flag(i_Index)
+	Gef2.get_measurementtext_Tekst(i_Index)
+	Gef2.get_measurementvar_Value(i_Index)
+	Gef2.get_nr_scans()
+	Gef2.get_parent_flag()
+	Gef2.get_parent_reference()
+	Gef2.get_procedurecode_flag()
+	Gef2.get_procedurecode_Code()
+	Gef2.get_projectid_flag()
+	Gef2.get_projectid_Number()
+	Gef2.get_reportCode_flag()
+	Gef2.get_reportcode_Code()
+	Gef2.get_startdate_flag()
+	Gef2.get_startdate_Yyyy()
+	Gef2.get_startdate_Mm()
+	Gef2.get_startdate_Dd()
+	Gef2.get_xyid_flag()
+	Gef2.get_xyid_X()
+	Gef2.get_xyid_Y()
+	Gef2.get_zid_flag()
+	Gef2.get_zid_Z()
+	Gef2.qn2column(i_iQtyNumber)
+	Gef2.is_plotable()
+	Gef2.test_gef(i_sAspect)

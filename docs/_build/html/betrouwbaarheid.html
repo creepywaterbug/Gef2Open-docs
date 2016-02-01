@@ -1,0 +1,419 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Betrouwbaarheid &mdash; UtlGefOpen documentatie</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="UtlGefOpen documentatie" href="index.html"/>
+        <link rel="next" title="Referenties" href="referenties.html"/>
+        <link rel="prev" title="Functies" href="functies.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> UtlGefOpen
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gebruik.html">Gebruik Gef2Open.py</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functies.html">Functies</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Betrouwbaarheid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ontbrekende-waarden">Ontbrekende waarden</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="referenties.html">Referenties</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">UtlGefOpen</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Betrouwbaarheid</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/betrouwbaarheid.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="betrouwbaarheid">
+<h1>Betrouwbaarheid<a class="headerlink" href="#betrouwbaarheid" title="Permalink to this headline">¶</a></h1>
+<p>De betrouwbaarheid van de library Gef2Open.py is bepaald door het testen van alle functies op een groot (1000+) aantal gef-bestanden. De uitkomsten tussen de oorspronkelijke library Gef2.dll zijn vervolgens vergeleken met de uitkomsten van de onderhavige library Gef2Open.py.</p>
+<p>Als alle diverse soorten &#8216;ontbrekende waarden&#8217; gelijk aan elkaar gesteld werden dan hadden de meeste functies 100% overeenkomst en 3 functies 1 verschil en 2 functies tientallen verschillen.</p>
+<p>Voor de functies test_gef() en is_plotable() zijn nog geen alternatieven gerealiseerd. Dit staat wel op het programma.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="63%" />
+<col width="23%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Functie</th>
+<th class="head">Gelijk ?</th>
+<th class="head">Aktie ?</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>def gbr_is_gbr()</td>
+<td>ja</td>
+<td>todo</td>
+</tr>
+<tr class="row-odd"><td>def gcr_is_gcr()</td>
+<td>1van2000 niet</td>
+<td>todo</td>
+</tr>
+<tr class="row-even"><td>def get_companyid_flag()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_column()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_column_flag()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_companyid_name()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_data(1, 1)</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_measurementtext_flag(1)</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_measurementtext_flag(15)</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_measurementvar_flag(1)</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_measurementvar_flag(15)</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_measurementtext_Tekst(1)</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_measurementtext_Tekst(15)</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_measurementvar_Value(1)</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_measurementvar_Value(15)</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_nr_scans()</td>
+<td>17v2000 niet</td>
+<td>todo</td>
+</tr>
+<tr class="row-even"><td>def get_parent_flag()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_parent_reference()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_procedurecode_flag()</td>
+<td>1v2000 niet</td>
+<td>klaar</td>
+</tr>
+<tr class="row-odd"><td>def get_procedurecode_Code()</td>
+<td>1v2000 niet</td>
+<td>klaar</td>
+</tr>
+<tr class="row-even"><td>def get_projectid_flag()</td>
+<td>ja</td>
+<td>klaar</td>
+</tr>
+<tr class="row-odd"><td>def get_projectid_number()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_reportcode_flag()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_reportcode_Code()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_startdate_flag()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_startdate_yyyy()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_startdate_mm()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_startdate_Dd()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_xyid_flag()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_xyid_x()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_xyid_Y()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def get_zid_flag()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>def get_zid_Z()</td>
+<td>ja</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>def qn2column(1)</td>
+<td>42v2000 niet</td>
+<td>todo</td>
+</tr>
+<tr class="row-even"><td>def qn2column(11)</td>
+<td>ja</td>
+<td>klaar</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Uitkomsten van 5 niet vergeleken test functies</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="68%" />
+<col width="13%" />
+<col width="9%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Functie</th>
+<th class="head">Totaal</th>
+<th class="head">True</th>
+<th class="head">False</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>def test_gef(&#8216;GEF-CPT-Report)</td>
+<td>2001</td>
+<td>1017</td>
+<td>984</td>
+</tr>
+<tr class="row-odd"><td>def test_gef(&#8216;HEADER&#8217;)</td>
+<td>2001</td>
+<td>1937</td>
+<td>64</td>
+</tr>
+<tr class="row-even"><td>def test_gef(&#8216;GEF-BORE-Report&#8217;)</td>
+<td>2001</td>
+<td>570</td>
+<td>1431</td>
+</tr>
+<tr class="row-odd"><td>def test_gef(&#8216;DATA&#8217;)</td>
+<td>2001</td>
+<td>1998</td>
+<td>3</td>
+</tr>
+<tr class="row-even"><td>def is_plotable()</td>
+<td>2001</td>
+<td>2001</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="ontbrekende-waarden">
+<h2>Ontbrekende waarden<a class="headerlink" href="#ontbrekende-waarden" title="Permalink to this headline">¶</a></h2>
+<p>In de resultaten van functies van Gef2.dll komen veelvuldig de waarden &#8216;<strong>32767</strong>&#8216; , &#8216;<strong>32767-32767-32767</strong>&#8216; en &#8216;<strong>3.40282346639e+38</strong>&#8216; voor. In de tests die zijn uitgevoerd matchen deze resultaten altijd met de uitkomst &#8216;None&#8217; in de bijbehorende functie in Gef2Open.py. Hetzelfde geldt voor de uitkomst &#8216;<strong>-1.79769313486e+308</strong>&#8216; van functies in Gef2.dll, maar deze komt slechts weinig voor.
+Een paar keer leverde in de test een functie in Gef2Open.py een lege waarde op (&#8216;&#8217;), terwijl dezelfde functie in Gef2.dll geen resultaat leverde.</p>
+<p>Op grond hiervan neem ik aan dat de volgende waardes missing values zijn en gelijk kunnen worden gesteld aan &#8216;None&#8217;:</p>
+<div class="highlight-python"><div class="highlight"><pre>Missing values: &#39;3.40282346639e+38&#39;, &#39;-1.79769313486e+308&#39;, &#39;32767&#39;, &#39;32767-32767-32767&#39;, &#39;&#39;
+</pre></div>
+</div>
+<p>De aanroep van Gef2.dll functies leveren veelvuldig geen resultaat op. In alle gevallen was dit ook bij de bijbehorende functie in Gef2Open.py het geval.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="referenties.html" class="btn btn-neutral float-right" title="Referenties" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="functies.html" class="btn btn-neutral" title="Functies" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, waterbug.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
